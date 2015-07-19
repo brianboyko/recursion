@@ -9,9 +9,9 @@ var getElementsByClassName = function(className, test, elements) {
         var elements = [];
     }
     if (test === undefined) {
-        var test = document.body;
+        var test = window.document.body;
     }
-    if (test.classList.contains(className)) {
+    if (test.classList !== undefined && test.classList.contains(className)) {
         elements.push(test);
     }
     if (test.hasChildNodes()) {
