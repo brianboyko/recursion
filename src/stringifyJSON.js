@@ -51,6 +51,5 @@ var stringifyJSON = function(obj) {
       output.push(strObject);
       break;
   }
-  console.log(output.join(', '));
   return output.join(', ');
 };
